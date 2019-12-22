@@ -1,0 +1,14 @@
+CSS  Hack:解决IE浏览器的兼容问题
+         方式一： 
+			<!--[if IE 9]>
+			  <style>
+				body {
+					background-color:orange //在IE9下，背景颜色为橘色
+				}
+			  </style>
+			  <![end if]-->
+2.浏览器兼容之厂商浏览器的问题
+	因为CSS3新增加了一些属性，有的浏览器不支持
+	因此在写一些新增加的属性的时候，需要加上浏览器的内核例如
+	-webkit-border-radius: 20px
+			  

@@ -1,0 +1,44 @@
+转换的属性：
+	transform:元素的转换，是元素或者是位置上的变形或者是转换
+	属性值： 位移 transform:translate(x,y);
+	         当取一个值的时候是代表的x方向，如果是两个值就是x和y方向
+			 注意是右下为正
+			 
+			 缩放： transform:scale(x,y);
+			 取值 默认值为1  >1 ：放大    <1 缩小
+			 当取一个值时，水平和垂直方向等比例缩放
+			 
+			 旋转： transform:rotate(45deg);  旋转45度
+			 取正值是顺时针旋转  负值是逆时针旋转
+			 
+			 倾斜： transform: skew(xdeg,ydeg)
+			         一个值的时候代表水平方向
+			 
+			 多个属性值之间用空格隔开
+			 
+			 
+	transition: 过渡属性，就是和hover不一样，从一个样式过渡到另外一个样式 可以设置时间
+	    属性值：过渡的属性 持续时间 速度变换类型 延迟（后面两个属性是可选的）
+		过渡的属性值:
+		颜色
+		取值为数值的属性
+		转换transform
+		阴影 box-shadow
+		渐变
+		过渡时间： s/ms
+		过渡的速度变换类型：
+			case 默认值 先加速后减速
+			linear: 匀速
+			ease-in 加速
+			ease-out 减速
+			ease-in-out 先加速后减速
+		延迟 s/ms
+		过渡必须有触发的事件
+		:hover {
+			过渡到的样式
+		}
+		
+		属性：transition-property: all  过渡的属性
+		      transition-duration: 1s    持续的时间
+              transition-timing-function: linear 速度变化
+			  transition-delay: 1s 延迟的时间
